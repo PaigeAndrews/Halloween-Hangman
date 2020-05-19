@@ -175,13 +175,13 @@ function instructionsDisplay(){
     instructions.innerHTML = "Can't guess two or more letters at once"
   }else if (randomWord.includes(inputField.value.toLowerCase())){
     usedLetters.push(inputField.value.toLowerCase())
-    instructions.innerHTML = `You got one! <br> Youve used these letters: ${usedLetters} ${wrongLetters}`;
+    instructions.innerHTML = `You got one! <br> Youve used these letters: ${usedLetters} , ${wrongLetters}`;
   } else if (!inputField.value.match(/^[A-Za-z]+$/) ){
     console.log(inputField.value)
     instructions.innerHTML = "Please guess only letters"
   }else if (randomWord.includes != inputField.value.toLowerCase() ){
     wrongLetters.push(inputField.value.toLowerCase())
-    instructions.innerHTML = `Oops! This letter is not in the word <br> Guess another letter! <br> Youve used these letters: ${usedLetters} ${wrongLetters}`
+    instructions.innerHTML = `Oops! This letter is not in the word <br> Guess another letter! <br> Youve used these letters: ${usedLetters} , ${wrongLetters}`
     lives--
   }
   winLose()
