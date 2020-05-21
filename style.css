@@ -126,7 +126,13 @@ li{
 }
 
 #easy:hover, #medium:hover, #hard:hover {
-  color: black;
+  color: black;  
+  cursor: pointer;
+}
+
+#playAgain:hover{
+  background-color: rgb(148, 1, 1);
+  cursor: pointer;
 }
 
 @keyframes slidein {
@@ -163,9 +169,7 @@ li{
   .instructions{
     text-shadow: 1px 0 black, 0 2px black, 2px 0 black, 0 1px black;
   }
-  #playAgain:hover{
-    background-color: rgb(148, 1, 1);
-  }
+
  
   * {
     animation-delay: -99s;
